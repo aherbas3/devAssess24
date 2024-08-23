@@ -9,7 +9,6 @@ User {
   lastName: string // user's last name
   email: string // user's email
   password: string // user's password used only in level 3 and beyond
-  profilePicture?: string // pointer to user's profile picture in cloud storage --> used in Expert level
 }
 ```
 
@@ -22,7 +21,6 @@ Animal {
   hoursTrained: number // total number of hours the animal has been trained for
   owner: ObjectId // id of the animal's owner
   dateOfBirth?: Date // animal's date of birth
-  profilePicture?: string // pointer to animal's profile picture in cloud storage --> used in Expert level
 }
 ```
 
@@ -36,6 +34,5 @@ TrainingLog {
   hours: number // number of hours the training log records
   animal: ObjectId // animal this training log corresponds to
   user: ObjectId // user this training log corresponds to
-  trainingLogVideo?: string // pointer to training log video in cloud storage --> used in Expert level
 }
 ```
